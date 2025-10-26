@@ -1,0 +1,33 @@
+html,body{height:100%;margin:0;background:transparent}
+body{font-family:Segoe UI, Roboto, Arial, sans-serif; -webkit-font-smoothing:antialiased}
+.widget{
+  width:320px;
+  padding:14px;
+  border-radius:16px;
+  background:rgba(0,0,0,0.45);
+  color:#fff;
+  box-shadow:0 8px 30px rgba(0,0,0,0.4);
+  backdrop-filter: blur(8px);
+}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.title{font-weight:600}
+#closeBtn{cursor:pointer;opacity:0.7;padding:4px;border-radius:6px}
+#closeBtn:hover{opacity:1;background:rgba(255,255,255,0.06)}
+#taskList{list-style:none;padding:0;margin:0 0 8px 0;max-height:300px;overflow:auto}
+#taskList li{display:flex;align-items:center;justify-content:space-between;padding:8px;border-radius:10px;margin-bottom:8px;background:rgba(255,255,255,0.03);cursor:default}
+#taskList li.done{opacity:0.6;text-decoration:line-through}
+#taskList li .text{flex:1;padding-right:8px}
+.inputRow{display:flex;gap:8px}
+#newTask{flex:1;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:#fff;outline:none}
+#addBtn{padding:8px 10px;border-radius:8px;border:none;background:#00bfa5;color:#012;cursor:pointer;font-weight:600}
+.hint{font-size:11px;color:rgba(255,255,255,0.6);margin-top:8px;text-align:center}
+#drag-area {
+  -webkit-app-region: drag;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: move;
+}
